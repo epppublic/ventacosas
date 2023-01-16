@@ -6,13 +6,31 @@
     <meta name="description" content="Venta de cosas por motivo de viaje">
     <meta name="keywords" content="venta">
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <style>
+        #books {
+          width: 100%;
+          padding: 50px 0;
+          text-align: left;
+          margin-top: 20px;
+          display: none;
+        }
+        #electro {
+          width: 100%;
+          padding: 50px 0;
+          text-align: left;
+          margin-top: 20px;
+          display: none;
+        }
+        </style>
 </head>
 
 <body>
     <h1>Venta de cosas</h1>
+<button onclick="myFunctionbooks()">Libros</button>
+<button onclick="myFunctionelectro()">Electrodomesticos</button>
 
-    <h2>Libros</h2>
-    <h3>Libro uno</h3>
+<div id="books">
+
     <img src="images/books/IMG_3325.jpeg" alt="Libro uno" width="300" height="300">
     <img src="images/books/IMG_3326.jpeg" alt="Libro uno" width="300" height="300">
     <img src="images/books/IMG_3327.jpeg" alt="Libro uno" width="300" height="300">
@@ -21,9 +39,10 @@
         <li>Titulo: El huerto de mi amada</li>
         <li>1200 colones</li>
     </ul>
+</div>
 
-    <h2>Electrodomesticos</h2>
-    <h3>uno</h3>
+<div id="electro">
+
     <img src="images/electro/IMG_2935 2.jpeg" alt="Libro uno" width="300" height="300">
 
     <ul>
@@ -31,6 +50,24 @@
         <li>Titulo: El huerto de mi amada</li>
         <li>1200 colones</li>
     </ul>
-
+</div>
+    <script>
+        function myFunctionbooks() {
+          var x = document.getElementById("books");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        function myFunctionelectro() {
+          var x = document.getElementById("electro");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        </script>
 </body>
 </html>
