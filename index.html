@@ -28,15 +28,25 @@
           margin-top: 20px;
           display: none;
         }
+        #pagetitle {
+            color: brown;
+            font-size: 72px;
+            text-align: center;
+            background-color: lightblue;
+
+
+        }
+
         </style>
 </head>
 
 <body>
-    <h1>Venta de cosas</h1>
+    <h1 id="pagetitle">Venta de cosas</h1>
+    <h2>Haz click en la imagen para ver los diferentes productos que estamos vendiendo :)</h2>
 
-<button onclick="myFunctionbooks()">Libros</button>
-<button onclick="myFunctionelectro()">Electrodomesticos</button>
-<button onclick="myFunctionmuebles()">Muebles</button>
+<button onclick="myFunctionbooks()"><img id="bookimg" src="booksbutton.jpeg" width="100" height="100" alt="books"></button>
+<button onclick="myFunctionelectro()"><img id="electroimg" src="electrobutton.jpeg" width="100" height="100" alt="electro"></button>
+<button onclick="myFunctionmuebles()"><img id="mueblesimg" src="mueblesbutton.jpeg" width="100" height="100" alt="muebles"></button>
 
 <div id="books">
 
